@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+.lists-wrap {
+  margin: 20px 0;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 3px;
+}
+.form-wrap {
+  display: inline-block;
+}
+.add-items-form {
+  margin: 0 auto;
+}

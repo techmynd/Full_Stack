@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+.lists-wrap {
+  margin: 20px 0;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 3px;
+  .form-wrap {
+    display: inline-block;
+    .add-items-form {
+      margin: 0 auto;
+    }
+  }
+}
+.list-group-wrap {
+  .to-do-list {
+    .list-group-item {
+      text-align: left;
+      .remove-btn {
+        margin-right: 0px;
+        margin-left: 2px;
+        float: right;
+        margin-top: -3px;
+      }
+      .edit-btn {
+        margin-right: 2px;
+        margin-left: 2px;
+        float: right;
+        margin-top: -3px;
+      }
+    }
+  }
+}
+
+// css transition group settings
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}

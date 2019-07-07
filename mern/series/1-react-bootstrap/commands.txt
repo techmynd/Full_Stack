@@ -1,0 +1,40 @@
+install client
+==============
+> npm run installclient
+
+install backend
+===============
+> npm run installadmin
+
+Run server
+==========
+> npm run server
+
+Run Client
+==========
+> npm run client
+
+Run frontend and backend together / start project
+=================================================
+> npm run dev
+
+
+
+
+
+
+
+> yarn start
+
+http://localhost:3000/
+
+
+proxy is our backend server that should be in admin folder
+"proxy": "http://localhost:5000",
+
+concurrently allows to run more commands/servers at same time
+
+// below command means go in admin folder and run dev script
+"server": "npm run dev --prefix admin",
+
+> yarn add bootstrap reactstrap uuid react-transition-group

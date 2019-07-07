@@ -1,0 +1,47 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "react-transition-group": "^4.1.1",
+    "reactstrap": "^8.0.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "morgan": "^1.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "installclient": "npm install",
+    "installadmin": "npm install --prefix admin",
+    "server": "npm run dev --prefix admin",
+    "client": "npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "proxy": "http://localhost:5000",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
